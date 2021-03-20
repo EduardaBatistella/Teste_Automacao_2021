@@ -78,7 +78,6 @@ public class SetupTest extends BaseTests{
         System.out.println("Fez a Pesquisa");
 
         Search.clickleft_block();
-        System.out.println("Clicou no Produto");
 
         Search.clickBtnAddtoCart();
         System.out.println("Adicionou ao Carrinho");

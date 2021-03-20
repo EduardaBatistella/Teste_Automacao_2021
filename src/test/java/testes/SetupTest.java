@@ -80,7 +80,7 @@ public class SetupTest extends BaseTests{
         Search.clickleft_block();
 
         Search.clickBtnAddtoCart();
-        System.out.println("Adicionou ao Carrinho");
+
 
     }
 

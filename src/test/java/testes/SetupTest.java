@@ -5,6 +5,7 @@ import org.junit.Test;
 import pageObject.CreatAccountPage;
 import pageObject.HomePageObject;
 import pageObject.LoginPageObject;
+import pageObject.MyAccountPage;
 import utils.Browser;
 import utils.Utils;
 
@@ -25,6 +26,7 @@ public class SetupTest extends BaseTests {
         HomePageObject home = new HomePageObject();
         LoginPageObject login = new LoginPageObject();
         CreatAccountPage creat = new CreatAccountPage();
+        MyAccountPage myAccount = new MyAccountPage();
 
         //Clicar em Login
         home.clickBtnLogin();
@@ -55,7 +57,11 @@ public class SetupTest extends BaseTests {
         creat.submitAccount();
         System.out.println("Criou a conta");
 
+        //Validar se criou o usuário
+        Assert.assertTrue(myAccount.isPageMyAccount());
+
     }
+
 }
 
 

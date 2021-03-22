@@ -13,7 +13,7 @@ public class LoginPageObject extends LoginPageElementMapper {
     }
 
     public void prencherEmail() {
-    email_creat.sendKeys("batistellaeduarda@gmail.com");
+    email_creat.sendKeys("teste5050505050@gmail.com");
     }
 
     public void submit_creat() {

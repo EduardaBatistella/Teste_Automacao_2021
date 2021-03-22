@@ -1,14 +1,18 @@
 package elementMapper;
 
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 
 public class LoginPageElementMapper {
 
-    public WebElement email;
+    @FindBy(id = "email_create")
+    public WebElement email_creat;
 
-    public WebElement passwd;
+    @FindBy(id = "SubmitCreate")
+    public WebElement submit_creat;
 
-    public WebElement SubmitLogin;
+    @FindBy(id = "page-subheading")
+    public WebElement page_subheading;
 
 
-    }
+}

@@ -11,15 +11,13 @@ public class LoginPageObject extends LoginPageElementMapper {
     public LoginPageObject(){
         PageFactory.initElements(Browser.getCurrentDriver(),this);
     }
-    public void fillEmail(){
-       email.sendKeys("dudabati@gmail.com");
+
+    public void prencherEmail() {
+    email_creat.sendKeys("batistellaeduarda@gmail.com");
     }
 
-    public void fillPasswd(){
-        passwd.sendKeys("140993");
-    }
-
-    public void clickBtnSubmitLogin(){
-     SubmitLogin.click();
+    public void submit_creat() {
+        submit_creat.click();
     }
 }
+
